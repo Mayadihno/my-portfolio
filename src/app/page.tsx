@@ -1,7 +1,8 @@
-export default function Home() {
-  return (
-    <div className=" text-center font-bold text-3xl">
-      <h2>mayadihno</h2>
-    </div>
-  );
-}
+import React from "react";
+import Home from "./_components/Home/Home";
+
+const page = () => {
+  return <Home />;
+};
+
+export default page;

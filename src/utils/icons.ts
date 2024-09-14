@@ -1,0 +1,35 @@
+import { BsCodeSlash } from "react-icons/bs";
+import {
+  MdHome,
+  MdWork,
+  MdMail,
+  MdKeyboardDoubleArrowDown,
+  MdLocationOn,
+  MdOutlinePhoneIphone,
+  MdMusicNote,
+  MdMusicOff,
+} from "react-icons/md";
+import { FaRegUser, FaXTwitter } from "react-icons/fa6";
+import { SiDatabricks, SiGithub } from "react-icons/si";
+import { FaLinkedin, FaWhatsapp, FaGraduationCap } from "react-icons/fa";
+import { RiArrowUpDoubleLine } from "react-icons/ri";
+
+export const ICONS = {
+  logo: BsCodeSlash,
+  home: MdHome,
+  about: FaRegUser,
+  work: MdWork,
+  portfolio: SiDatabricks,
+  contact: MdMail,
+  github: SiGithub,
+  twitter: FaXTwitter,
+  linkedin: FaLinkedin,
+  whatsapp: FaWhatsapp,
+  education: FaGraduationCap,
+  arrowDown: MdKeyboardDoubleArrowDown,
+  location: MdLocationOn,
+  phone: MdOutlinePhoneIphone,
+  music: MdMusicNote,
+  musicOff: MdMusicOff,
+  arrowUp: RiArrowUpDoubleLine,
+};
