@@ -119,3 +119,145 @@ export const experiences = [
     icon: ICONS.work,
   },
 ];
+
+export const education = [
+  {
+    title: "BTech. in Industrial Chemistry",
+    company: "Federal University Of Technology Akure (FUTA)",
+    location: "Akure, Nigeria",
+    period: "Jan 2018 - Dec 2023",
+    description: [
+      "My educational journey is characterized by academic excellence and a broad range of knowledge. With a CGPA of 4.39 out of 5.0, I have completed my academic endeavors with dedication, achieving exceptional results in my quest for knowledge.",
+    ],
+    icon: ICONS.education,
+  },
+  {
+    title: "React Developer ZeroToMastery",
+    company: "Udemy",
+    location: "Online",
+    period: "Jul 2021 - Nov 2021",
+    description: [
+      "The immersive ZTZ course delivered an in-depth learning experience, equipping learners with essential technical skills for web and mobile app development. Its curriculum thoughtfully covered crucial topics, emphasizing key areas such as:",
+      "React Fundamentals",
+      "React and Redux",
+      "React Typescript",
+      "Next Js",
+    ],
+    icon: ICONS.education,
+  },
+];
+
+export const skills = [
+  {
+    name: "HTML",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg",
+  },
+  {
+    name: "TypeScript",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+  },
+  {
+    name: "React",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    name: "Next.js",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg",
+  },
+  {
+    name: "Tailwind",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    name: "MUI",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
+  },
+  {
+    name: "Ant Design",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antdesign/antdesign-original.svg",
+  },
+  {
+    name: "Bootstrap",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+  },
+  {
+    name: "SASS",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+  },
+  {
+    name: "Redux",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+  },
+  {
+    name: "Axios",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain-wordmark.svg",
+  },
+  {
+    name: "Node.Js",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Express Js",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
+  },
+  {
+    name: "Firebase",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+  },
+  {
+    name: "Prisma",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original-wordmark.svg",
+  },
+  {
+    name: "Mongoose",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg",
+  },
+  {
+    name: "MongoDb",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+  },
+  {
+    name: "Git",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  {
+    name: "Github",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  },
+  {
+    name: "Npm",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+  },
+  {
+    name: "Notion",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg",
+  },
+  {
+    name: "Slack",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg",
+  },
+  {
+    name: "Figma",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+  },
+  {
+    name: "VScode",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+  },
+  {
+    name: "Netlify",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg",
+  },
+  {
+    name: "Vercel",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
+  },
+];

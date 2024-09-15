@@ -3,6 +3,7 @@ import { ICONS } from "@/utils/icons";
 import React, { useState } from "react";
 import { sidebarData } from "./data";
 import { Link as ScrollLink } from "react-scroll";
+import Image from "next/image";
 const Sidebar = () => {
   const [active, setActive] = useState("home");
   const handleSetActive = (to: string) => {
@@ -13,7 +14,15 @@ const Sidebar = () => {
     <div>
       <div className="flex flex-col justify-center items-center" data->
         <div className="my-16 ">
-          <ICONS.maya size={40} color="white" />
+          <Image
+            src={
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maya/maya-original-wordmark.svg"
+            }
+            alt="logo"
+            width={40}
+            height={40}
+            className=" bg-white shadow-lg"
+          />
         </div>
         <div
           className="flex flex-col space-y-5 mt-5 "
