@@ -1,23 +1,20 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import { Prociono } from "next/font/google";
 import Sidebar from "./_components/Sidebar/Sidebar";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { AOSInit } from "./_components/Aos/Aos";
+import "aos/dist/aos.css";
 
 export const metadata: Metadata = {
   title: "Mayadihno Porfolio",
   description: "My portfolio and everything you need to know about me",
 };
+
+// Import Prociono font
+const prociono = Prociono({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function RootLayout({
   children,
@@ -26,16 +23,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="flex justify-between w-full">
-          <div className="w-[10%] sticky left-0 top-0 h-screen bg-[#189FB0]">
-            <Sidebar />
+      <AOSInit>
+        <body className={`${prociono.className} antialiased`}>
+          <div className="flex justify-between w-full">
+            <div className="w-[100px] sticky left-0 top-0 h-screen bg-[#189FB0]">
+              <Sidebar />
+            </div>
+            <div className=" w-full bg-[#00CFDF]">{children}</div>
           </div>
-          <div className=" w-full bg-[#00CFDF]">{children}</div>
-        </div>
-      </body>
+        </body>
+      </AOSInit>
     </html>
   );
 }

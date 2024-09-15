@@ -1,28 +1,33 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Banner from "../Banner/Banner";
 import About from "../About/About";
 import Resume from "../Resume/Resume";
 import Portfolio from "../Porfolio/Portfolio";
 import Contact from "../Contact/Contact";
+import { Element } from "react-scroll";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-      <section id="home">
+      <Element name="home">
         <Banner />
-      </section>
-      <section id="about">
+      </Element>
+      <Element name="about">
         <About />
-      </section>
-      <section id="work">
+      </Element>
+      <Element name="work">
         <Resume />
-      </section>
-      <section id="portfolio">
+      </Element>
+      <Element name="portfolio">
         <Portfolio />
-      </section>
-      <section id="contact">
+      </Element>
+      <Element name="contact">
         <Contact />
-      </section>
+      </Element>
     </div>
   );
 };

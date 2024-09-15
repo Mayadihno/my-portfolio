@@ -1,7 +1,48 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import { bannerIcon } from "../Sidebar/data";
+import Link from "next/link";
+import { ICONS } from "@/utils/icons";
+import { Link as ScrollLink } from "react-scroll";
 
 const Banner = () => {
-  return <div className=" min-h-screen">Banner</div>;
+  return (
+    <div className="banner-bg relative aos-init aos-animate w-full h-screen flex justify-center items-center font-ebgaramond">
+      <div
+        className="flex flex-col text-slate-100 aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <h3 className="text-3xl">Hello, I'm</h3>
+        <h1 className=" text-6xl font-bold py-5">Maya Tunde Olawale</h1>
+        <div className="flex space-x-3 items-center">
+          <div className="w-3 h-3 rounded-full bg-white" />
+          <h4 className="text-xl font-semibold">Frontend Web Developer</h4>
+        </div>
+        <div className="flex items-center space-x-5 my-5">
+          {bannerIcon.map((item) => {
+            return (
+              <div className="" key={item.id}>
+                <Link
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <item.icon size={25} />
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="absolute bottom-3 bg-[#189FB0] p-3 rounded-full cursor-pointer animate-bounce">
+        <ScrollLink smooth={true} duration={500} spy={true} to="contact">
+          <ICONS.arrowDown size={25} color="white" />
+        </ScrollLink>
+      </div>
+    </div>
+  );
 };
 
 export default Banner;
