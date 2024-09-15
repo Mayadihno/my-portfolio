@@ -15,7 +15,11 @@ const Sidebar = () => {
         <div className="my-16 ">
           <ICONS.maya size={40} color="white" />
         </div>
-        <div className="flex flex-col space-y-5 mt-5 ">
+        <div
+          className="flex flex-col space-y-5 mt-5 "
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           {sidebarData.map((item) => {
             return (
               <ScrollLink

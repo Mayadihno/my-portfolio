@@ -29,7 +29,7 @@ export default function RootLayout({
             <div className="w-[100px] sticky left-0 top-0 h-screen bg-[#189FB0]">
               <Sidebar />
             </div>
-            <div className=" w-full bg-[#00CFDF]">{children}</div>
+            <div className="w-full">{children}</div>
           </div>
         </body>
       </AOSInit>
