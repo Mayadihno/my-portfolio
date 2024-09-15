@@ -1,5 +1,5 @@
 import { ICONS } from "@/utils/icons";
-import { FaBriefcase, FaLaptopCode, FaBuilding } from "react-icons/fa";
+
 interface DataProps {
   id: number;
   name: string;

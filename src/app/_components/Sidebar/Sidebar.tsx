@@ -1,5 +1,4 @@
 "use client";
-import { ICONS } from "@/utils/icons";
 import React, { useState } from "react";
 import { sidebarData } from "./data";
 import { Link as ScrollLink } from "react-scroll";
