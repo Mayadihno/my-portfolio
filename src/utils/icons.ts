@@ -8,6 +8,7 @@ import {
   MdOutlinePhoneIphone,
   MdMusicNote,
   MdMusicOff,
+  MdOutlineClose,
 } from "react-icons/md";
 import { FaRegUser, FaXTwitter } from "react-icons/fa6";
 import { SiDatabricks, SiGithub, SiAutodeskmaya } from "react-icons/si";
@@ -19,6 +20,7 @@ export const ICONS = {
   home: MdHome,
   about: FaRegUser,
   work: MdWork,
+  close: MdOutlineClose,
   portfolio: SiDatabricks,
   contact: MdMail,
   github: SiGithub,
