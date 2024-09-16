@@ -1,11 +1,13 @@
 "use client";
+import { ContactProp } from "@/app/_components/Contact/Contact";
 import React from "react";
+import { FieldErrors, UseFormRegister } from "react-hook-form";
 type TextInputProps = {
   label?: string;
-  register?: any;
-  name?: string;
+  register?: UseFormRegister<ContactProp>;
+  name: keyof ContactProp;
   type?: string;
-  errors?: any;
+  errors?: FieldErrors<ContactProp>;
   placeholder?: string;
   className?: string;
 };

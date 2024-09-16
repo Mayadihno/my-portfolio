@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { bannerIcon, contact } from "../Sidebar/data";
 import Link from "next/link";
 
-interface ContactProp {
+export interface ContactProp {
   firstName: string;
   lastName: string;
   email: string;
