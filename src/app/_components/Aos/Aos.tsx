@@ -9,6 +9,7 @@ export const AOSInit = ({ children }: { children: React.ReactNode }) => {
       easing: "ease-out-quad",
       duration: 3000,
       delay: 300,
+      once: true,
     });
   }, []);
 

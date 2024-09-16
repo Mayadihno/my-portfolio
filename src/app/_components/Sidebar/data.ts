@@ -261,3 +261,21 @@ export const skills = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
   },
 ];
+
+export const contact = [
+  {
+    id: 1,
+    text: "Lagos, Nigeria.",
+    icon: ICONS.location,
+  },
+  {
+    id: 2,
+    text: "(+234) 8136908207",
+    icon: ICONS.phone,
+  },
+  {
+    id: 3,
+    text: "mayadihno@gmail.com",
+    icon: ICONS.contact,
+  },
+];

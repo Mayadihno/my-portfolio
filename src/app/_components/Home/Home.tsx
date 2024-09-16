@@ -6,6 +6,7 @@ import Resume from "../Resume/Resume";
 import Portfolio from "../Porfolio/Portfolio";
 import Contact from "../Contact/Contact";
 import { Element } from "react-scroll";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const Home = () => {
       <Element name="contact">
         <Contact />
       </Element>
+      <Footer />
     </div>
   );
 };

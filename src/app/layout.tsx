@@ -26,7 +26,7 @@ export default function RootLayout({
       <AOSInit>
         <body className={`${prociono.className} antialiased`}>
           <div className="flex justify-between w-full">
-            <div className="w-[100px] sticky left-0 top-0 h-screen bg-[#189FB0]">
+            <div className="w-[100px] sticky left-0 top-0 shadow-xl h-screen bg-[#189FB0]">
               <Sidebar />
             </div>
             <div className="w-full">{children}</div>
