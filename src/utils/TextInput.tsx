@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from "react";
-
+import React from "react";
 type TextInputProps = {
   label?: string;
   register?: any;
@@ -20,11 +19,6 @@ const TextInput = ({
   placeholder = "",
   className,
 }: TextInputProps) => {
-  const [showPassword, setShowPassword] = useState(false);
-
-  const isPasswordField = type?.toLowerCase().includes("password");
-  const inputType = isPasswordField && showPassword ? "text" : type;
-
   const baseClass = `appearance-none block w-full pr-10 p-3 shadow-sm md:text-xl text-sm font-medium text-black rounded-md
    placeholder:font-Urbanist placeholder:font-semibold placeholder:text-xs md:placeholder:text-base 
    placeholder:text-gray-400 outline-none focus:outline-none sm:text-sm ${className}`;
@@ -55,7 +49,7 @@ const TextInput = ({
                 {...register(`${name}`, { required: true })}
                 id={name}
                 name={name}
-                type={inputType}
+                type={type}
                 placeholder={placeholder}
                 autoComplete={name}
                 className={baseClass}

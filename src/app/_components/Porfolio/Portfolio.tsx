@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { portfolio } from "./data";
+import { portfolio, PortfolioProp } from "./data";
 import Image from "next/image";
 import PorfolioView from "./PorfolioView";
 
 const Portfolio = () => {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState<PortfolioProp | null>(null);
 
-  const handleItemClick = (item: any) => {
+  const handleItemClick = (item: PortfolioProp) => {
     setSelectedItem(item);
   };
 
@@ -29,7 +29,7 @@ const Portfolio = () => {
         className="flex md:justify-center flex-wrap gap-10 py-6"
         data-aos="fade-up"
       >
-        {portfolio.map((item) => (
+        {portfolio.map((item: PortfolioProp) => (
           <div
             className="shadow-xl rounded-[10px] relative group cursor-pointer"
             key={item.id}

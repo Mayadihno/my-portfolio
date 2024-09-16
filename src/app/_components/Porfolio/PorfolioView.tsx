@@ -2,10 +2,11 @@ import { ICONS } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { PortfolioProp } from "./data";
 
 type QuickView = {
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
-  item: any;
+  item: PortfolioProp;
 };
 
 const PorfolioView = ({ setShow, item }: QuickView) => {

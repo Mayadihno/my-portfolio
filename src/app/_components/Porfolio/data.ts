@@ -10,8 +10,18 @@ import image9 from "../../../../public/image-2.png";
 import image10 from "../../../../public/image-7.png";
 import image11 from "../../../../public/image-8.png";
 import image12 from "../../../../public/image-12.png";
+import { StaticImageData } from "next/image";
 
-export const portfolio = [
+export interface PortfolioProp {
+  id: number;
+  name: string;
+  link: string;
+  github: string;
+  image: StaticImageData;
+  desc: string;
+}
+
+export const portfolio: PortfolioProp[] = [
   {
     id: 1,
     name: "MayaBeauty",

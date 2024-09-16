@@ -21,8 +21,8 @@ const About = () => {
           <h3 className="text-[#969899] text-6xl font-bold pb-5">About Me</h3>
           <div className=" text-lg leading-10">
             <p className="py-3">
-              I'm a frontend web developer with over 3 years of experience with
-              a strong focus on creating visually appealing, responsive and
+              I&apos;m a frontend web developer with over 3 years of experience
+              with a strong focus on creating visually appealing, responsive and
               scalable websites and web applications.
             </p>
             <p>
