@@ -1,7 +1,7 @@
 "use client";
 import { ICONS } from "@/utils/icons";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Sheet,
   SheetClose,
@@ -13,14 +13,38 @@ import {
 } from "@/components/ui/sheet";
 import { sidebarData } from "../Sidebar/data";
 import { Link as ScrollLink } from "react-scroll";
+import { Switch } from "@/components/ui/switch";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
+  const [isChecked, setIsChecked] = useState(false);
+
+  const [audio] = useState(() => {
+    const audioElement = new Audio("/portfolio.mp3");
+    audioElement.loop = true;
+    return audioElement;
+  });
 
   const handleSetActive = (to: string) => {
     setActive(to);
   };
+  const handleToggle = () => {
+    const newStatus = !isChecked;
+    setIsChecked(newStatus);
+
+    if (newStatus) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      audio.pause();
+    };
+  }, [audio]);
 
   return (
     <div>
@@ -90,6 +114,19 @@ const Navbar = () => {
                         </ScrollLink>
                       );
                     })}
+                    <div className="flex items-center space-x-5 ml-3">
+                      <div className="">
+                        {!isChecked ? (
+                          <ICONS.musicOff size={30} color="white" />
+                        ) : (
+                          <ICONS.music size={30} color="white" />
+                        )}
+                      </div>
+                      <Switch
+                        checked={isChecked}
+                        onCheckedChange={handleToggle}
+                      />
+                    </div>
                   </div>
                 </SheetDescription>
               </SheetHeader>
