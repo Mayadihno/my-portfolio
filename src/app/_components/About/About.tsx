@@ -1,7 +1,16 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import image from "../../../../public/myself.jpg";
 const About = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/mayaResume.pdf";
+    link.download = "maya-cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="md:w-[85%] w-[95%] mx-auto font-ebgaramond">
       <div className="flex md:flex-row flex-col items-center md:space-x-16 mt-10 md:mt-20 mb-10">
@@ -41,9 +50,13 @@ const About = () => {
           <div
             data-aos="fade-right"
             data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
             className="text-xl font-semibold text-white pt-4 font-urbanist"
           >
-            <button className=" bg-[#42CBD7] px-5 py-2 rounded-md hover:bg-[#42CBD7]/50">
+            <button
+              onClick={handleDownload}
+              className="bg-[#42CBD7] px-5 py-2 rounded-md hover:bg-[#42CBD7]/50"
+            >
               Download CV
             </button>
           </div>
