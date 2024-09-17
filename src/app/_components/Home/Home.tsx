@@ -12,33 +12,37 @@ import { ICONS } from "@/utils/icons";
 const Home = () => {
   const [show, setShow] = useState(true);
   const [isChecked, setIsChecked] = useState(true);
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
-  const [audio] = useState(() => {
-    const audioElement = new Audio("/portfolio.mp3");
-    audioElement.loop = true;
-    return audioElement;
-  });
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   useEffect(() => {
-    setShow(true);
-  }, [open]);
+    if (typeof window !== "undefined") {
+      const audioElement = new Audio("/portfolio.mp3");
+      audioElement.loop = true;
+      setAudio(audioElement);
+    }
+  }, []);
+
   const handleToggle = () => {
     const newStatus = isChecked;
     setIsChecked(newStatus);
 
-    if (newStatus) {
-      audio.play();
-    } else {
-      audio.pause();
+    if (audio) {
+      if (newStatus) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
     }
     setShow(false);
   };
 
   useEffect(() => {
     return () => {
-      audio.pause();
+      if (audio) audio.pause();
     };
   }, [audio]);
   return (

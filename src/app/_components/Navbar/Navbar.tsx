@@ -19,30 +19,35 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
   const [isChecked, setIsChecked] = useState(false);
-
-  const [audio] = useState(() => {
-    const audioElement = new Audio("/portfolio.mp3");
-    audioElement.loop = true;
-    return audioElement;
-  });
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
   const handleSetActive = (to: string) => {
     setActive(to);
   };
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const audioElement = new Audio("/portfolio.mp3");
+      audioElement.loop = true;
+      setAudio(audioElement);
+    }
+  }, []);
+
   const handleToggle = () => {
     const newStatus = !isChecked;
     setIsChecked(newStatus);
 
-    if (newStatus) {
-      audio.play();
-    } else {
-      audio.pause();
+    if (audio) {
+      if (newStatus) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
     }
   };
 
   useEffect(() => {
     return () => {
-      audio.pause();
+      if (audio) audio.pause();
     };
   }, [audio]);
 
