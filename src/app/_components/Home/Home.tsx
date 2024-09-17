@@ -47,10 +47,10 @@ const Home = () => {
         {show && (
           <div
             data-aos="zoom-in"
-            data-aos-duration="800"
+            data-aos-duration="700"
             className="fixed w-full h-screen top-0 left-0 bg-[#000000b0] z-50 flex justify-center items-center"
           >
-            <div className=" relative p-6 md:hidden block w-[95%] mx-auto bg-[#189FB0] shadow-xl rounded-md">
+            <div className="relative p-6 md:hidden block w-[95%] mx-auto bg-[#189FB0] shadow-xl rounded-md">
               <div className="flex justify-center items-center flex-col">
                 <div className=" bg-white rounded-full w-[60px] h-[60px] flex justify-center items-center">
                   <ICONS.music size={40} color="#189FB0" />
