@@ -20,6 +20,7 @@ const Navbar = () => {
   const [active, setActive] = useState("home");
   const [isChecked, setIsChecked] = useState(false);
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+  const [show, setShow] = useState(true);
 
   const handleSetActive = (to: string) => {
     setActive(to);
@@ -43,6 +44,7 @@ const Navbar = () => {
         audio.pause();
       }
     }
+    setShow(false);
   };
 
   useEffect(() => {
@@ -53,6 +55,45 @@ const Navbar = () => {
 
   return (
     <div>
+      <div className="md:hidden block">
+        {show && (
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="700"
+            className="fixed w-full h-screen top-0 left-0 bg-[#000000b0] z-50 flex justify-center items-center"
+          >
+            <div className="relative p-6 md:hidden block w-[95%] mx-auto bg-[#189FB0] shadow-xl rounded-md">
+              <div className="flex justify-center items-center flex-col">
+                <div className=" bg-white rounded-full w-[60px] h-[60px] flex justify-center items-center">
+                  <ICONS.music size={40} color="#189FB0" />
+                </div>
+                <h3 className="text-white font-semibold text-3xl py-6">
+                  Enable Music
+                </h3>
+                <p className="text-center text-white text-lg leading-8 pb-6">
+                  Explore my portfolio with music to add depth to your visit.
+                  You have the option to toggle it on or off anytime from the
+                  navigation menu.
+                </p>
+                <div className="flex space-x-6">
+                  <button
+                    onClick={() => setShow(false)}
+                    className="bg-[#116D7A]/70 px-5 py-3 text-white rounded-md text-center"
+                  >
+                    No, Thank You
+                  </button>
+                  <button
+                    onClick={handleToggle}
+                    className="bg-white px-8 py-3 text-[#189FB0s] rounded-md text-center"
+                  >
+                    Okay
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
       <header className="flex justify-between h-14 font-ebgaramond items-center gap-4 border-b bg-[#189FB0]/70 px-4">
         <div className="">
           <Image
