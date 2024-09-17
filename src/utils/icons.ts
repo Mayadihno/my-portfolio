@@ -14,6 +14,7 @@ import { FaRegUser, FaXTwitter } from "react-icons/fa6";
 import { SiDatabricks, SiGithub, SiAutodeskmaya } from "react-icons/si";
 import { FaLinkedin, FaWhatsapp, FaGraduationCap } from "react-icons/fa";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export const ICONS = {
   logo: BsCodeSlash,
@@ -35,4 +36,5 @@ export const ICONS = {
   musicOff: MdMusicOff,
   arrowUp: RiArrowUpDoubleLine,
   maya: SiAutodeskmaya,
+  menu: AiOutlineMenu,
 };

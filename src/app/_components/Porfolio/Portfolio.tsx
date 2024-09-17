@@ -20,7 +20,7 @@ const Portfolio = () => {
       <div className="pt-14">
         <h3
           data-aos="fade-up"
-          className="text-[#969899] text-center text-6xl font-bold pb-5 font-prociono"
+          className="text-[#969899] md:text-center md:text-6xl text-3xl font-bold pb-5 font-prociono"
         >
           Portfolio
         </h3>

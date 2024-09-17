@@ -7,9 +7,9 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Banner = () => {
   return (
-    <div className="banner-bg relative aos-init aos-animate w-full h-screen flex justify-center items-center font-ebgaramond">
+    <div className="banner-bg relative aos-init aos-animate w-full md:h-screen h-[75vh] flex justify-center items-center font-ebgaramond">
       <div
-        className="flex flex-col text-slate-100"
+        className="flex flex-col text-center text-slate-100"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-delay="200"
@@ -18,13 +18,13 @@ const Banner = () => {
           Hello, I'm
         </h3>
         <h1
-          className=" text-6xl font-bold py-5"
+          className=" text-6xl font-bold py-8 md:py-5 text-white"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
           Maya Tunde Olawale
         </h1>
-        <div className="flex space-x-3 items-center">
+        <div className="flex space-x-3 justify-center items-center">
           <div className="w-3 h-3 rounded-full bg-white" />
           <h4
             className="text-xl font-semibold"
@@ -34,7 +34,7 @@ const Banner = () => {
             Frontend Web Developer
           </h4>
         </div>
-        <div className="flex items-center space-x-5 my-5">
+        <div className="flex items-center justify-center my-8 space-x-5 md:my-5">
           {bannerIcon.map((item) => {
             return (
               <div className="" key={item.id} data-aos="fade-up-right">

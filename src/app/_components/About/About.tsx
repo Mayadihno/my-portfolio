@@ -3,23 +3,30 @@ import React from "react";
 import image from "../../../../public/myself.jpg";
 const About = () => {
   return (
-    <div className="w-[85%] mx-auto font-ebgaramond">
-      <div className="flex items-center space-x-16 mt-20 mb-10">
+    <div className="md:w-[85%] w-[95%] mx-auto font-ebgaramond">
+      <div className="flex md:flex-row flex-col items-center md:space-x-16 mt-10 md:mt-20 mb-10">
         <div
           data-aos="flip-left"
-          className="bg-[#42CBD7] p-2 rounded-lg shadow-lg border border-[#42CBD7]"
+          className="p-2 md:bg-[#42CBD7] md:rounded-lg rounded-full shadow-lg border border-[#42CBD7]"
         >
           <Image
             src={image}
             alt="myself"
             width={400}
             height={400}
-            className="w-full h-full rounded-lg object-contain"
+            className="md:object-contain rounded-full md:rounded-lg
+               w-44 h-44 sm:w-48 sm:h-48 md:w-[600px] md:h-fit"
           />
         </div>
-        <div className="" data-aos="zoom-in-up">
-          <h3 className="text-[#969899] text-6xl font-bold pb-5">About Me</h3>
-          <div className=" text-lg leading-10">
+
+        <div
+          className="py-6 md:py-0 md:text-left text-center"
+          data-aos="zoom-in-up"
+        >
+          <h3 className="text-[#969899] md:text-6xl text-3xl font-bold pb-2 md:pb-5">
+            About Me
+          </h3>
+          <div className="text-lg leading-10 md:font-ebgaramond font-urbanist">
             <p className="py-3">
               I&apos;m a frontend web developer with over 3 years of experience
               with a strong focus on creating visually appealing, responsive and

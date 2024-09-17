@@ -21,21 +21,23 @@ const PorfolioView = ({ setShow, item }: QuickView) => {
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
         data-aos-duration="1200"
-        className="relative w-[95%] md:w-[60%] bg-white rounded-lg p-6 shadow-md flex"
+        className="relative w-[95%] md:w-[60%] overflow-y-scroll h-[85vh] md:h-[75vh] bg-white rounded-lg p-6 shadow-md md:flex-row flex-col flex"
       >
-        <ICONS.close
-          size={30}
-          className="absolute top-4 right-4 cursor-pointer"
-          onClick={() => setShow(false)}
-        />
-        <div className="w-1/2 p-4 shadow-lg">
+        <div className="mb-8 md:mb-0">
+          <ICONS.close
+            size={30}
+            className="absolute top-4 right-4 cursor-pointer"
+            onClick={() => setShow(false)}
+          />
+        </div>
+        <div className="md:w-1/2 w-full p-4 shadow-lg">
           <Image
             src={item.image}
             alt={item.name}
             className="w-full h-full rounded-lg"
           />
         </div>
-        <div className="w-1/2 p-4 flex flex-col justify-between">
+        <div className="md:w-1/2 w-full p-4 flex flex-col justify-between">
           <div>
             <h3 className="text-3xl font-bold mb-4">{item.name}</h3>
             <p className="text-gray-600 text-base leading-6 mb-6 font-ebgaramond">

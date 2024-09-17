@@ -17,7 +17,7 @@ const Home = () => {
       <Element name="home">
         <Banner />
       </Element>
-      <Element name="about">
+      <Element name="about me">
         <About />
       </Element>
       <Element name="work">

@@ -27,15 +27,15 @@ const Contact = () => {
   };
   return (
     <div className="bg-[#189FB0] w-full h-fit pt-10 pb-10 mt-5">
-      <div className="w-[85%] mx-auto">
+      <div className="md:w-[85%] w-[95%] mx-auto">
         <h3
           data-aos="fade-up"
-          className="text-white text-6xl font-bold pb-5 font-ebgaramond"
+          className="text-white md:text-6xl text-3xl font-bold pb-5 font-ebgaramond"
         >
           Contact
         </h3>
-        <div className="flex space-x-10">
-          <div className="w-1/2" data-aos="fade-right">
+        <div className="flex md:flex-row flex-col-reverse md:space-x-10">
+          <div className="md:w-1/2 w-full md:mt-0 my-5" data-aos="fade-right">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="flex space-x-5">
                 <div className="w-full">
@@ -108,8 +108,8 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="w-1/2 font-ebgaramond" data-aos="fade-left">
-            <h3 className="text-white text-3xl font-bold pt-5 pb-5">
+          <div className="md:w-1/2 w-full font-ebgaramond" data-aos="fade-left">
+            <h3 className="text-white text-3xl font-bold md:pt-5 py-3 md:pb-5">
               Get In Touch
             </h3>
             <div className=" text-lg text-white font-medium leading-10">

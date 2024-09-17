@@ -6,14 +6,14 @@ const Resume = () => {
   return (
     <div className="bg-[#F1F9FA] w-full py-6 font-ebgaramond">
       <div data-aos="fade-up" className=" text-center">
-        <h3 className="text-[#969899] text-6xl font-bold pb-5 font-prociono">
+        <h3 className="text-[#969899] md:text-6xl text-3xl font-bold pb-5 font-prociono">
           Resume
         </h3>
-        <h5 className="text-lg">
+        <h5 className="md:text-lg text-base">
           Learn more about my experiences, qualifications and skills.
         </h5>
       </div>
-      <div className="w-[85%] mx-auto px-4 py-8">
+      <div className="md:w-[85%] w-[95%] mx-auto px-4 py-8">
         <h1
           data-aos="fade-left"
           className="text-2xl font-bold mb-8 text-[#189FB0]"
@@ -50,7 +50,7 @@ const Resume = () => {
                   className="list-disc mt-2 text-gray-700 text-lg"
                 >
                   {experience.description.map((point, i) => (
-                    <li key={i} className="mt-1 leading-9 w-[70%]">
+                    <li key={i} className="mt-1 leading-9 md:w-[70%] w-full">
                       {point}
                     </li>
                   ))}
@@ -60,7 +60,7 @@ const Resume = () => {
           ))}
         </div>
       </div>
-      <div className="w-[85%] mx-auto px-4 py-8">
+      <div className="md:w-[85%] w-[95%] mx-auto px-4 py-8">
         <h1
           className="text-2xl font-bold mb-8 text-[#189FB0]"
           data-aos="fade-left"
@@ -97,7 +97,7 @@ const Resume = () => {
                   className="list-disc mt-2 text-gray-700 text-lg"
                 >
                   {experience.description.map((point, i) => (
-                    <li key={i} className="mt-1 leading-9 w-[70%]">
+                    <li key={i} className="mt-1 leading-9 md:w-[70%] w-full">
                       {point}
                     </li>
                   ))}
@@ -107,7 +107,7 @@ const Resume = () => {
           ))}
         </div>
       </div>
-      <div className="w-[85%] mx-auto px-4 py-8 font-ebgaramond">
+      <div className="md:w-[85%] w-[95%] mx-auto px-4 py-8 font-ebgaramond">
         <h3
           className="text-3xl pb-4 text-center font-semibold text-[#189FB0]"
           data-aos="fade-left"
@@ -115,7 +115,7 @@ const Resume = () => {
           Tools & Technologies
         </h3>
         <div
-          className="flex md:justify-center flex-wrap gap-10 pt-6"
+          className="md:flex md:justify-center md:flex-wrap md:gap-10 pt-4 md:pt-6 grid grid-cols-3 gap-8"
           data-aos="fade-up"
         >
           {skills.map((item, index) => {

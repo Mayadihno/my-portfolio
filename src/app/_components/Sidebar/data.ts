@@ -20,8 +20,8 @@ export const sidebarData: DataProps[] = [
   },
   {
     id: 2,
-    name: "About",
-    path: "#about",
+    name: "About Me",
+    path: "#about me",
     icon: ICONS.about,
   },
   {
