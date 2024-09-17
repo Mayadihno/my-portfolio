@@ -45,7 +45,7 @@ const PorfolioView = ({ setShow, item }: QuickView) => {
             </p>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 text-base md:text-lg">
             <Link
               href={item.link}
               target="_blank"

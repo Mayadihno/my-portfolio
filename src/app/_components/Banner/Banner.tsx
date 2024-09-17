@@ -7,7 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Banner = () => {
   return (
-    <div className="banner-bg relative aos-init aos-animate w-full md:h-screen h-[75vh] flex justify-center items-center font-ebgaramond">
+    <div className="banner-bg relative w-full md:h-screen h-[75vh] flex justify-center items-center font-ebgaramond">
       <div
         className="flex flex-col text-center text-slate-100"
         data-aos="fade-up"

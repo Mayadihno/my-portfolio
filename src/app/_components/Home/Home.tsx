@@ -13,7 +13,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className=" max-w-full overflow-x-hidden">
       <Element name="home">
         <Banner />
       </Element>

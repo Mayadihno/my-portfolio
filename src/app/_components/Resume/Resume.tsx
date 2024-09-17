@@ -31,13 +31,16 @@ const Resume = () => {
               </div>
               <div className="pl-8">
                 <h2
-                  className="text-2xl font-semibold pb-2"
+                  className="md:text-2xl textlg font-bold md:font-semibold pb-2"
                   data-aos="fade-left"
                 >
                   {experience.title}
                 </h2>
-                <p className="text-gray-600 pb-2" data-aos="fade-up">
-                  <span className=" bg-[#DBF0F3] p-1 text-center text-base font-bold rounded-sm cursor-pointer mr-1">
+                <p
+                  className="text-gray-600 pb-2 text-nowrap"
+                  data-aos="fade-up"
+                >
+                  <span className=" bg-[#DBF0F3] p-1 text-center md:text-base text-sm font-bold rounded-sm cursor-pointer mr-1">
                     {experience.company}
                   </span>
                   - {experience.location}
@@ -47,7 +50,7 @@ const Resume = () => {
                 </p>
                 <ul
                   data-aos="fade-up"
-                  className="list-disc mt-2 text-gray-700 text-lg"
+                  className="list-disc mt-2 text-gray-700 text-base md:text-lg"
                 >
                   {experience.description.map((point, i) => (
                     <li key={i} className="mt-1 leading-9 md:w-[70%] w-full">
@@ -78,13 +81,13 @@ const Resume = () => {
               </div>
               <div className="pl-8">
                 <h2
-                  className="text-2xl font-semibold pb-2"
+                  className="md:text-2xl textlg font-bold md:font-semibold pb-2"
                   data-aos="fade-left"
                 >
                   {experience.title}
                 </h2>
                 <p className="text-gray-600 pb-2" data-aos="fade-up">
-                  <span className=" bg-[#DBF0F3] p-1 text-center font-bold text-base rounded-sm cursor-pointer mr-1">
+                  <span className=" bg-[#DBF0F3] p-1 text-center md:text-base text-sm font-bold rounded-sm cursor-pointer mr-1">
                     {experience.company}
                   </span>
                   - {experience.location}
@@ -94,7 +97,7 @@ const Resume = () => {
                 </p>
                 <ul
                   data-aos="fade-up"
-                  className="list-disc mt-2 text-gray-700 text-lg"
+                  className="list-disc mt-2 text-gray-700 text-base md:text-lg"
                 >
                   {experience.description.map((point, i) => (
                     <li key={i} className="mt-1 leading-9 md:w-[70%] w-full">
@@ -132,7 +135,7 @@ const Resume = () => {
                     height={50}
                   />
                 </div>
-                <h4 className="pb-2 text-base font-semibold text-[#5F6264]">
+                <h4 className="pb-2 md:text-base text-xs font-bold  md:font-semibold text-[#5F6264]">
                   {item.name}
                 </h4>
               </div>

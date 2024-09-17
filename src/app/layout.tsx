@@ -25,9 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AOSInit>
-        <body className={`${prociono.className} antialiased`}>
-          <div className="flex md:flex-row flex-col justify-between w-full">
-            <div className="sticky top-0 z-50 block md:hidden">
+        <body className={`${prociono.className} antialiased overflow-x-hidden`}>
+          <div className="flex md:flex-row flex-col justify-between max-w-full">
+            <div className="sticky top-0 z-50 block md:hidden w-full">
               <Navbar />
             </div>
             <div className="w-[100px] sm:hidden hidden md:block sticky left-0 top-0 shadow-xl h-screen bg-[#189FB0]">
