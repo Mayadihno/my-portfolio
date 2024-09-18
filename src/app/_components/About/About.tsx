@@ -5,8 +5,8 @@ import image from "../../../../public/myself.jpg";
 const About = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/mayaResume.pdf";
-    link.download = "maya-cv.pdf";
+    link.href = "/mayaTundeOlawaleCV.pdf";
+    link.download = "mayaTundeOlawale-cv.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
