@@ -23,7 +23,7 @@ const TextInput = ({
 }: TextInputProps) => {
   const baseClass = `appearance-none block w-full pr-10 p-3 shadow-sm md:text-xl text-sm font-medium text-black rounded-md
    placeholder:font-Urbanist placeholder:font-semibold placeholder:text-xs md:placeholder:text-base 
-   placeholder:text-gray-400 outline-none focus:outline-none sm:text-sm ${className}`;
+   placeholder:text-gray-400 outline-none focus:outline-none ${className}`;
 
   return (
     <div className="">
@@ -65,7 +65,7 @@ const TextInput = ({
           style={{
             color: "#CC0000",
           }}
-          className=" text-base font-ebgaramond text-red-500"
+          className=" md:text-base text-xs font-ebgaramond text-red-500"
         >
           {label} field is required
         </span>

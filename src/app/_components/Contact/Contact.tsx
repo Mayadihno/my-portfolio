@@ -1,9 +1,12 @@
 "use client";
 import TextInput from "@/utils/TextInput";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { bannerIcon, contact } from "../Sidebar/data";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { LoaderCircle } from "lucide-react";
 
 export interface ContactProp {
   firstName: string;
@@ -14,6 +17,7 @@ export interface ContactProp {
   subject: string;
 }
 const Contact = () => {
+  const [loading, setLoading] = useState<boolean>(false);
   const {
     register,
     reset,
@@ -22,8 +26,44 @@ const Contact = () => {
   } = useForm<ContactProp>();
 
   const onSubmit = (data: ContactProp) => {
-    console.log(data);
-    reset();
+    setLoading(true);
+    try {
+      const templateParams = {
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email,
+        phoneNumber: data.phoneNumber,
+        message: data.message,
+        subject: data.subject,
+      };
+      emailjs
+        .send(
+          "service_jlpkyyb",
+          "template_71hr7ku",
+          templateParams,
+          "0RwIucuJJihXwNViI"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast.success(
+              "Your Message has been sent to Mayadihno. Thank You!!!"
+            );
+            setLoading(false);
+            reset();
+          },
+          (error) => {
+            console.log(error.text);
+            toast.error(
+              "Error occur when sending your message. Kindly try again later."
+            );
+            setLoading(false);
+          }
+        );
+    } catch (error) {
+      toast.error("Something went wrong. Try again later");
+      setLoading(false);
+    }
   };
   return (
     <div className="bg-[#189FB0] w-full h-fit pt-10 pb-10 mt-5">
@@ -36,7 +76,7 @@ const Contact = () => {
         </h3>
         <div className="flex md:flex-row flex-col-reverse md:space-x-10">
           <div className="md:w-1/2 w-full md:mt-0 my-5" data-aos="fade-right">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} className="font-ebgaramond">
               <div className="flex space-x-5">
                 <div className="w-full">
                   <TextInput
@@ -85,7 +125,7 @@ const Contact = () => {
                   label="Subject"
                   register={register}
                   errors={errors}
-                  placeholder="Application Status"
+                  placeholder="Subject"
                   name="subject"
                   className="w-full"
                 />
@@ -103,7 +143,14 @@ const Contact = () => {
               </div>
               <div className="mt-5">
                 <button className="bg-white w-full text-lg font-semibold text-center text-[#189FB0] hover:text-white px-5 py-3 rounded-md hover:bg-[#42CBD7]/100">
-                  Send Message
+                  {loading ? (
+                    <span className="flex items-center justify-center">
+                      <LoaderCircle className="mr-2 animate-spin" />
+                      Sending message...
+                    </span>
+                  ) : (
+                    " Send Message"
+                  )}
                 </button>
               </div>
             </form>

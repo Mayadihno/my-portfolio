@@ -5,6 +5,7 @@ import Sidebar from "./_components/Sidebar/Sidebar";
 import { AOSInit } from "./_components/Aos/Aos";
 import "aos/dist/aos.css";
 import Navbar from "./_components/Navbar/Navbar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Mayadihno Porfolio",
@@ -35,6 +36,7 @@ export default function RootLayout({
             </div>
             <div className="w-full">{children}</div>
           </div>
+          <Toaster position="top-center" reverseOrder={false} />
         </body>
       </AOSInit>
     </html>
