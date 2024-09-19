@@ -70,12 +70,17 @@ const Contact = () => {
       <div className="md:w-[85%] w-[95%] mx-auto">
         <h3
           data-aos="fade-up"
+          data-aos-duration="1500"
           className="text-white md:text-6xl text-3xl font-bold pb-5 font-ebgaramond"
         >
           Contact
         </h3>
         <div className="flex md:flex-row flex-col-reverse md:space-x-10">
-          <div className="md:w-1/2 w-full md:mt-0 my-5" data-aos="fade-right">
+          <div
+            className="md:w-1/2 w-full md:mt-0 my-5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <form onSubmit={handleSubmit(onSubmit)} className="font-ebgaramond">
               <div className="flex space-x-5">
                 <div className="w-full">
@@ -155,7 +160,11 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="md:w-1/2 w-full font-ebgaramond" data-aos="fade-left">
+          <div
+            className="md:w-1/2 w-full font-ebgaramond"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <h3 className="text-white text-3xl font-bold md:pt-5 py-3 md:pb-5">
               Get In Touch
             </h3>
@@ -186,7 +195,12 @@ const Contact = () => {
             <div className="flex items-center space-x-5 my-5">
               {bannerIcon.map((item) => {
                 return (
-                  <div className="" key={item.id} data-aos="fade-up-right">
+                  <div
+                    className=""
+                    key={item.id}
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                  >
                     <Link
                       href={item.link}
                       target="_blank"
