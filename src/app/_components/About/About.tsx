@@ -5,8 +5,8 @@ import image from "../../../../public/myself.jpg";
 const About = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/mayaTundeOlawaleCV.pdf";
-    link.download = "mayaTundeOlawale-cv.pdf";
+    link.href = "/mayaTundeOlawaleResume.pdf";
+    link.download = "mayaTundeOlawaleResume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -37,7 +37,7 @@ const About = () => {
           </h3>
           <div className="text-lg leading-10 md:font-ebgaramond font-urbanist">
             <p className="py-3">
-              I&apos;m a frontend web developer with over 3 years of experience
+              I&apos;m a frontend web developer with over 4 years of experience
               with a strong focus on creating visually appealing, responsive and
               scalable websites and web applications.
             </p>

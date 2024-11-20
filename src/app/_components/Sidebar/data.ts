@@ -127,7 +127,7 @@ export const education = [
     location: "Akure, Nigeria",
     period: "Jan 2018 - Dec 2023",
     description: [
-      "My educational journey is characterized by academic excellence and a broad range of knowledge. With a CGPA of 4.39 out of 5.0, I have completed my academic endeavors with dedication, achieving exceptional results in my quest for knowledge.",
+      "My educational journey is characterized by academic excellence and a broad range of knowledge. I have completed my academic endeavors with dedication, achieving exceptional results in my quest for knowledge.",
     ],
     icon: ICONS.education,
   },
