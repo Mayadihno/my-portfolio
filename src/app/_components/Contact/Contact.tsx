@@ -69,8 +69,6 @@ const Contact = () => {
     <div className="bg-[#189FB0] w-full h-fit pt-10 pb-10 mt-5">
       <div className="md:w-[85%] w-[95%] mx-auto">
         <h3
-          data-aos="fade-up"
-          data-aos-duration="2000"
           className="text-white md:text-6xl text-3xl font-bold pb-5 font-ebgaramond"
         >
           Contact

@@ -209,6 +209,14 @@ export const skills = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
   },
   {
+    name: "PHP",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+  },
+  {
+    name: "Laravel",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
+  },
+  {
     name: "Firebase",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
   },
