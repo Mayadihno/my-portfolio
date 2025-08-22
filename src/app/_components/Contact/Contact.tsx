@@ -68,16 +68,14 @@ const Contact = () => {
   return (
     <div className="bg-[#189FB0] w-full h-fit pt-10 pb-10 mt-5">
       <div className="md:w-[85%] w-[95%] mx-auto">
-        <h3
-          className="text-white md:text-6xl text-3xl font-bold pb-5 font-ebgaramond"
-        >
+        <h3 className="text-white md:text-6xl text-3xl font-bold pb-5 font-ebgaramond">
           Contact
         </h3>
         <div className="flex md:flex-row flex-col-reverse md:space-x-10">
           <div
             className="md:w-1/2 w-full md:mt-0 my-5"
-            data-aos="fade-right"
-            data-aos-duration="1500"
+            // data-aos="fade-right"
+            // data-aos-duration="1500"
           >
             <form onSubmit={handleSubmit(onSubmit)} className="font-ebgaramond">
               <div className="flex space-x-5">
@@ -160,17 +158,18 @@ const Contact = () => {
           </div>
           <div
             className="md:w-1/2 w-full font-ebgaramond"
-            data-aos="fade-left"
-            data-aos-duration="2000"
+            // data-aos="fade-left"
+            // data-aos-duration="2000"
           >
             <h3 className="text-white text-3xl font-bold md:pt-5 py-3 md:pb-5">
               Get In Touch
             </h3>
             <div className=" text-lg text-white font-medium leading-10">
               <p className="py-3">
-                I am a full-stack who is dedicated to providing high-quality,
-                user-friendly web app and Mobile applications. I am committed to
-                ensuring that you are completely satisfied with your project.
+                I am a full-stack developer who is dedicated to providing
+                high-quality, user-friendly web app and Mobile applications. I
+                am committed to ensuring that you are completely satisfied with
+                your project.
               </p>
               <p>
                 I will personally review your message within 24 hours and
@@ -196,8 +195,8 @@ const Contact = () => {
                   <div
                     className=""
                     key={item.id}
-                    data-aos="fade-up-right"
-                    data-aos-duration="1000"
+                    // data-aos="fade-up-right"
+                    // data-aos-duration="1000"
                   >
                     <Link
                       href={item.link}
