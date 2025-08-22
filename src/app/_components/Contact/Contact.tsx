@@ -168,8 +168,8 @@ const Contact = () => {
             </h3>
             <div className=" text-lg text-white font-medium leading-10">
               <p className="py-3">
-                I am a web developer who is dedicated to providing high-quality,
-                user-friendly websites and web applications. I am committed to
+                I am a full-stack who is dedicated to providing high-quality,
+                user-friendly web app and Mobile applications. I am committed to
                 ensuring that you are completely satisfied with your project.
               </p>
               <p>

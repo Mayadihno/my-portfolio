@@ -31,7 +31,7 @@ const Banner = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Frontend Web Developer
+            Full-Stack Developer
           </h4>
         </div>
         <div className="flex items-center justify-center my-8 space-x-5 md:my-5">
